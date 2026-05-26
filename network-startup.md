@@ -8,15 +8,51 @@
 # CIDR Range (Classless Inter-Domain Routing)
 
 A CIDR range consists of a base IP address, a slash (/), and a number. This number dictates how many bits are used for the network prefix. The fewer bits assigned to the network, the more bits left for devices (hosts), meaning a larger range of available IPs.
-Formula: 
-- The number of IP addresses available in a range is calculated using the formula \(2^{(32-\text{CIDR})}\). 
 
-- (For IPv6, it is \(2^{(128-\text{CIDR})}\)).For example, a /24 range leaves \(32 - 24 = 8\) bits, allowing \(2^8 = 256\)
 
+The number of IP addresses available in a range is calculated using the formula:
+
+
+```text
+2^(32 - CIDR)
+```
+
+For IPv6:
+
+```text
+2^(128 - CIDR)
+```
+
+---
+
+### Example
+
+For a:
+
+```text
+/24
+```
+
+CIDR range:
+
+```text
+32 - 24 = 8 bits
+```
+
+So:
+
+```text
+2^8 = 256
+```
+
+Total IP addresses available:
+
+```text
+256 IP addresses
+```
 CIDR is a way to represent:
 - an IP address
 - and how many devices/networks belong to it
-
 
 ### Example
 
