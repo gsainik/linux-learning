@@ -101,7 +101,7 @@ IP_ADDRESS / PREFIX
 
 ---
 
-## Understanding `/24`
+### Understanding `/24`
 
 IPv4 address has 32 bits.
 
@@ -117,7 +117,7 @@ Means:
 
 ---
 
-## Common CIDR Ranges
+### Common CIDR Ranges
 
 | CIDR | Subnet Mask | Total IPs | Usable Hosts |
 |---|---|---|---|
