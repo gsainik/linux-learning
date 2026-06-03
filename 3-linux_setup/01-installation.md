@@ -1,6 +1,6 @@
 # WSL Ubuntu Installation and Usage
 
-# Install WSL Ubuntu
+## Install WSL Ubuntu
 
 Open:
 - Command Prompt
@@ -18,7 +18,7 @@ This installs:
 
 ---
 
-# First Login
+## First Login
 
 After installation, Ubuntu opens like:
 
@@ -33,7 +33,7 @@ This means:
 
 ---
 
-# Switch to Root User
+## Switch to Root User
 
 Run:
 
@@ -53,7 +53,7 @@ Meaning:
 
 ---
 
-# Return Back to Normal User
+## Return Back to Normal User
 
 Run:
 
@@ -142,22 +142,3 @@ sudo apt install git
 
 ---
 
-# Important Symbols
-
-| Symbol | Meaning |
-|---|---|
-| `$` | Normal user |
-| `#` | Root user |
-
----
-
-# Important Linux Paths
-
-| Path | Meaning |
-|---|---|
-| `~` | Home directory |
-| `/home/sainikhil` | Normal user home |
-| `/root` | Root user home |
-| `/mnt/c` | Windows C drive |
-
----

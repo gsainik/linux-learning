@@ -146,7 +146,16 @@ means:
 | `sainikhil` | `/home/sainikhil` |
 | `root` | `/root` |
 
+## Important Linux Paths
 
+| Path | Meaning |
+|---|---|
+| `~` | Home directory |
+| `/home/sainikhil` | Normal user home |
+| `/root` | Root user home |
+| `/mnt/c` | Windows C drive |
+
+---
 
 # Linux User Home Directories
 
