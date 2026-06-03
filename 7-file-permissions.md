@@ -217,7 +217,7 @@ d  rwx  r-- r--
 
 ---
 
-# Example
+## Example
 
 ```text
 -rwxr--r--
@@ -299,7 +299,7 @@ Result:
 
 ---
 
-# Execute a File
+## Execute a File
 
 Suppose:
 
