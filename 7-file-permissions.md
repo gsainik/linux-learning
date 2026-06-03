@@ -45,6 +45,12 @@ chmod 700 filename  # User (rwx), No access for others
 ```
 
 ## Changing Ownership with `chown`
+In most cases, you must be root (or use sudo) to change file ownership. Normal users cannot arbitrarily transfer ownership of files to another user.
+Linux restricts ownership changes to:
+
+- Root user
+- Users with sudo privileges
+
 Modify file owner and group:
 ```bash
 chown newuser filename  # Change owner
@@ -52,10 +58,22 @@ chown newuser:newgroup filename  # Change owner and group
 chown :newgroup filename  # Change only group
 ```
 
+
 Recursively change ownership:
 ```bash
 chown -R newuser:newgroup directory/
 ```
+
+
+## Difference Between Permissions and Ownership
+
+| Operation | Normal User | Root/Sudo |
+|------------|------------|------------|
+| Change permissions on own file (`chmod`) | ✅ Yes | ✅ Yes |
+| Change ownership (`chown`) | ❌ No | ✅ Yes |
+| Change owner to another user | ❌ No | ✅ Yes |
+| Change group ownership (`chgrp`) | ⚠️ Limited | ✅ Yes |
+
 
 ## Changing Group Ownership with `chgrp`
 ```bash
@@ -100,6 +118,19 @@ umask 022  # Default: 755 for directories, 644 for files
 ## Conclusion
 Understanding file permissions is essential for system security and proper file management. Using `chmod`, `chown`, and `chgrp`, you can control access to files and directories efficiently.
 
+
+# Directory Permissions
+Exactly. File permissions and directory permissions use the same r, w, x notation, but the meaning is different for directories.
+
+# Difference Between File and Directory Permissions
+
+| Permission | File | Directory |
+|------------|------|-----------|
+| Read (r) | Read file contents | List directory contents |
+| Write (w) | Modify file contents | Create/Delete/Rename files |
+| Execute (x) | Run the file | Enter/traverse directory |
+
+All commands and concepts are same.
 
 # Detailed Explaination
 
